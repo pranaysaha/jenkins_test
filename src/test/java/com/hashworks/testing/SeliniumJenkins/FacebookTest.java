@@ -17,13 +17,13 @@ public class FacebookTest {
 	
 	@BeforeTest
 	public void testStart() {
-		System.setProperty("webdriver.chrome.driver", "src/main/resorurces/exe/chromedriver");;
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
-		chromeOptions.addArguments("--disable-gpu");
-		chromeOptions.addArguments("--no-sandbox");
-		 driver = new ChromeDriver(chromeOptions);
-//		 driver = new ChromeDriver();
+// 		System.setProperty("webdriver.chrome.driver", "src/main/resorurces/exe/chromedriver");;
+// 		ChromeOptions chromeOptions = new ChromeOptions();
+// 		chromeOptions.addArguments("--headless");
+// 		chromeOptions.addArguments("--disable-gpu");
+// 		chromeOptions.addArguments("--no-sandbox");
+// 		 driver = new ChromeDriver(chromeOptions);
+		 driver = new ChromeDriver();
 	}
 	@Test
 	public void testFacebook() {		
