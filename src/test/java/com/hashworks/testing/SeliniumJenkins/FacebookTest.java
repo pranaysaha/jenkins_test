@@ -17,7 +17,12 @@ public class FacebookTest {
 	
 	@BeforeTest
 	public void testStart() {
-		 driver = new ChromeDriver();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("--no-sandbox");
+		driver = new ChromeDriver(chromeOptions);
+		// driver = new ChromeDriver();
 	}
 	@Test
 	public void testFacebook() {		
