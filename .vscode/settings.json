@@ -1,4 +1,5 @@
 {
     "files.autoSave": true,
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "deepscan.ignoreConfirmWarning": true
 }
