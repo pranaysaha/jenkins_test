@@ -20,18 +20,18 @@ public class FacebookTest {
 	
 	@BeforeTest
 	public void testStart() {
-		// ChromeOptions chromeOptions = new ChromeOptions();
-		// chromeOptions.addArguments("--headless");
-		// chromeOptions.addArguments("--disable-gpu");
-		// chromeOptions.addArguments("--no-sandbox");
-		// driver = new ChromeDriver(chromeOptions);
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("--no-sandbox");
+		driver = new ChromeDriver(chromeOptions);
 		// driver = new ChromeDriver();
 
-		FirefoxOptions firefoxOptions = new FirefoxOptions();
-		firefoxOptions.addArguments("--headless");
-		firefoxOptions.addArguments("--disable-gpu");
-		firefoxOptions.addArguments("--no-sandbox");
-		driver = new FirefoxDriver(firefoxOptions);
+		// FirefoxOptions firefoxOptions = new FirefoxOptions();
+		// firefoxOptions.addArguments("--headless");
+		// firefoxOptions.addArguments("--disable-gpu");
+		// firefoxOptions.addArguments("--no-sandbox");
+		// driver = new FirefoxDriver(firefoxOptions);
 		// driver = new FirefoxDriver();
 
 	}
