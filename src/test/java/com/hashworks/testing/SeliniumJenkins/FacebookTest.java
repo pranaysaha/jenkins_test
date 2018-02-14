@@ -43,8 +43,8 @@ public class FacebookTest {
 			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			driver.findElement(By.id("email")).sendKeys("abc");
 			driver.findElement(By.id("pass")).sendKeys("abc");
-			driver.findElement(By.xpath("//input[@value='Log In']")).click();
-			// driver.findElement(By.xpath("//input[@value='Log In']")).sendKeys(Keys.ENTER);
+			// driver.findElement(By.xpath("//input[@value='Log In']")).click();
+			driver.findElement(By.xpath("//input[@value='Log In']")).sendKeys(Keys.ENTER);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
