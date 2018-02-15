@@ -39,7 +39,7 @@ public class FacebookTest {
 	public void testFacebook() {		
 		try {
 			driver.get("https://www.facebook.com");
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			driver.findElement(By.id("email")).sendKeys("abc");
 			driver.findElement(By.id("pass")).sendKeys("abc");
