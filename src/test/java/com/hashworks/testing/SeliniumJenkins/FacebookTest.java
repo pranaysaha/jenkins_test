@@ -38,13 +38,23 @@ public class FacebookTest {
 	@Test
 	public void testFacebook() {		
 		try {
-			driver.get("https://www.facebook.com");
+			// driver.get("https://www.facebook.com");
 			//driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-			driver.findElement(By.id("email")).sendKeys("abc");
-			driver.findElement(By.id("pass")).sendKeys("abc");
-			driver.findElement(By.xpath("//input[@value='Log In']")).click();
+			// driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+			// driver.findElement(By.id("email")).sendKeys("abc");
+			// driver.findElement(By.id("pass")).sendKeys("abc");
+			// driver.findElement(By.xpath("//input[@value='Log In']")).click();
 			// driver.findElement(By.xpath("//input[@value='Log In']")).sendKeys(Keys.ENTER);
+		
+			driver.get("https://github.com/login");
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+			System.out.println("entering email id...");
+			driver.findElement(By.id("login_field")).sendKeys("abc");
+			driver.findElement(By.id("password")).sendKeys("abc");
+			driver.findElement(By.xpath("//div[contains(@class,'mt-3')]//input[contains(@value,'Sign in')]")).click();
+			
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
