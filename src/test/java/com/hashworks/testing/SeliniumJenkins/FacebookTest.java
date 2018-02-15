@@ -20,12 +20,12 @@ public class FacebookTest {
 	
 	@BeforeTest
 	public void testStart() {
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
-		chromeOptions.addArguments("--disable-gpu");
-		chromeOptions.addArguments("--no-sandbox");
-		driver = new ChromeDriver(chromeOptions);
-		// driver = new ChromeDriver();
+		//ChromeOptions chromeOptions = new ChromeOptions();
+		//chromeOptions.addArguments("--headless");
+		//chromeOptions.addArguments("--disable-gpu");
+		//chromeOptions.addArguments("--no-sandbox");
+		//driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
 
 		// FirefoxOptions firefoxOptions = new FirefoxOptions();
 		// firefoxOptions.addArguments("--headless");
@@ -43,7 +43,7 @@ public class FacebookTest {
 			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			driver.findElement(By.id("email")).sendKeys("abc");
 			driver.findElement(By.id("pass")).sendKeys("abc");
-			// driver.findElement(By.xpath("//input[@value='Log In']")).click();
+			driver.findElement(By.xpath("//input[@value='Log In']")).click();
 			// driver.findElement(By.xpath("//input[@value='Log In']")).sendKeys(Keys.ENTER);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
