@@ -47,7 +47,7 @@ public class FacebookTest {
 			// driver.findElement(By.xpath("//input[@value='Log In']")).sendKeys(Keys.ENTER);
 		
 			driver.get("https://github.com/login");
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			System.out.println("entering email id...");
 			driver.findElement(By.id("login_field")).sendKeys("abc");
