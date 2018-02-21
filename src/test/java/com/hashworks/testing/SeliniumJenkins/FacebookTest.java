@@ -38,7 +38,7 @@ public class FacebookTest {
 //		chromeOptions.addArguments("--disable-gpu");
 //		chromeOptions.addArguments("--no-sandbox");
 //		driver = new ChromeDriver(chromeOptions);
-//		driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		
 //		FirefoxOptions firefoxOptions = new FirefoxOptions();
 //		firefoxOptions.addArguments("--headless");
@@ -50,21 +50,21 @@ public class FacebookTest {
 //		driver = new HtmlUnitDriver();
 		
 		    // Change this to match the location of your server
-		    URL server;
-		    String browser_name = "chrome";
-			try {
-				server = new URL("http://172.16.0.55:4444/wd/hub");
-				DesiredCapabilities capabilities = new DesiredCapabilities();
-			    capabilities.setBrowserName(browser_name);
+		    // URL server;
+		    // String browser_name = "chrome";
+			// try {
+			// 	server = new URL("http://172.16.0.55:4444/wd/hub");
+			// 	DesiredCapabilities capabilities = new DesiredCapabilities();
+			//     capabilities.setBrowserName(browser_name);
 
-			    System.out.println("Connecting to " + server);
+			//     System.out.println("Connecting to " + server);
 
-			    driver = new RemoteWebDriver(server, capabilities);
+			//     driver = new RemoteWebDriver(server, capabilities);
 			    
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			// } catch (MalformedURLException e) {
+			// 	// TODO Auto-generated catch block
+			// 	e.printStackTrace();
+			// }
 		
 	}
 	@Test
