@@ -53,7 +53,7 @@ public class FacebookTest {
 	URL server;
 	String browser_name = "chrome";
 	try {
-		server = new URL("http://172.16.0.52:4444/wd/hub");
+		server = new URL("http://172.16.0.35:4444/wd/hub");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setBrowserName(browser_name);
 
