@@ -53,7 +53,11 @@ public class FacebookTest {
 	URL server;
 	String browser_name = "chrome";
 	try {
-		server = new URL("http://172.16.0.47:4444/wd/hub");
+		// to run on windows with dockerToolbox uncomment next line of code
+		server = new URL("http://192.168.99.100:4444/wd/hub");
+
+		// to run the code on docker setup on Linux_VM uncomment next line of code
+		// server = new URL("http://172.16.0.40:4444/wd/hub");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setBrowserName(browser_name);
 
