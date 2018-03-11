@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps{
+                checkout scm
                 sh 'ls'
                 sh 'docker images'
             } 
