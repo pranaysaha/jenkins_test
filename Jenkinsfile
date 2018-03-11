@@ -1,5 +1,7 @@
 pipeline {
-    agent 'Lubuntu_VM'
+    agent {
+        label 'Lubuntu_VM'
+    }
     stages {
         stage('build') {
             steps{
