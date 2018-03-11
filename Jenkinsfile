@@ -1,7 +1,11 @@
 pipeline {
     agent 'Lubuntu_VM'
-    stage('build') {
-        sh 'ls'
-        sh 'docker images'
+    stages {
+        stage('build') {
+            steps{
+                sh 'ls'
+                sh 'docker images'
+            } 
+        }
     }
 }
