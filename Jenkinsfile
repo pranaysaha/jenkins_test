@@ -1,14 +1,4 @@
-pipeline {
-    agent {
-        label 'Lubuntu_VM'
-    }
-    stages {
-        stage('build') {
-            steps{
-                checkout scm
-                sh 'ls'
-                sh 'docker images'
-            } 
-        }
-    }
-}
+import groovy.json.JsonSlurperClassic
+def params = new JsonSlurperClassic().parseText("${JSONParams}")
+    println 'JSON Params : '+"${params}"
+
