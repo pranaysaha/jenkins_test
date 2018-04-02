@@ -6,7 +6,7 @@ properties([
           ])
    ])
    
-def params = readJSON text:"${JSONParams}"
+def params = new JsonSlurperClassic().parseText("${JSONParams}")
     println 'JSON Params : '+"${params}"
     
 def map=[:]
