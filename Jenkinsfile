@@ -1,5 +1,5 @@
 import groovy.json.*
-node('maven-ssh-slave'){
+node('Lubuntu_VM'){
 properties([
         parameters([
             string(name: 'JSONParams', defaultValue: '{}', description: 'JSONParams', trim: false )
